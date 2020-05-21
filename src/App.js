@@ -41,8 +41,9 @@ class App extends Component {
     const posts = this.state.posts.filter( p => p.id !== post.id );
     this.setState( { posts });
 
+
     try{
-          await http.delete( config.apiEndPoint + '/99' + post.id);
+          await http.delete( 's' + config.apiEndPoint + '/' + post.id);
     }
     catch (ex) {
       if( ex.response && ex.response.status === 404 ){
