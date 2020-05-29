@@ -8,7 +8,7 @@ import config from './config.json';
 
 class App extends Component {
   state = {
-    posts: []
+    posts: [] 
   };
 
   async componentDidMount() {
